@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/47c81eb83a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+       <!--inceput nav-bar-->
+  <nav class="navbar">
+    <div class="navbar__container">
+        <a href="index.html" id="navbar__logo">
+            <i class="fa-solid fa-martini-glass-citrus"></i>Horeca Education
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="cursuriPage.html" class="navbar__links">Cursuri</a>
+            </li>
+            <li class="navbar__item">
+                <a href="despre.html" class="navbar__links">Despre</a>
+            </li>
+            <li class="navbar__item">
+                <a href="form.html" class="navbar__links">Contact</a>
+            </li>
+            <li class="navbar__btn">
+                <a href="inscriere.html" class="button">Inscriere</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+  <!--sfarsit nav-bar-->
+
+  <!--inceput formular-->
+    <div id="overlay">
+        <form onsubmit="event.preventDefault();validateForm()">
+            <h1>Contact</h1>
+            <label for="name">Nume si prenume</label>
+            <input type="text" id="name" placeholder="Nume si prenume">
+            <small class="error"></small>
+
+            <label for="email">Adresa de email</label>
+            <input type="text" id="email" placeholder="Adresa de email">
+            <small class="error"></small>
+
+            <label for="message">Mesaj</label>
+            <textarea id="message" placeholder="Comenteaza aici..." rows="6"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="Trimite">
+                <p id="success"></p>
+            </div>
+        </form>
+    </div>
+
+<!--sfarsit formular-->
+
+
+ <!--sectiune footer inceput-->
+ <div class="footer__container">
+    
+    <div class="social__media">
+        <div class="social__media--wrap">
+            <div class="footer__logo">
+                <a href="/" id="footer__logo"><i class="fa-solid fa-martini-glass-citrus"></i>Horeca Education</a>
+            </div>
+            <p class="website__rights">Acreditat de Ministerul Muncii și Ministerul Educatiei
+                </p>
+               
+                <div class="social__icons">
+                    <a href="https://www.facebook.com/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+
+        </div>
+    </div>
+</div>                  
+<!--sfarsit footer-->
+  
+    <script src="js/validareForm.js"></script>
+</body>
+</html>
